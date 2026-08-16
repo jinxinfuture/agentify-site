@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Jinxin Future</title>
+<meta name="description" content="Jinxin Future (瑾欣未来科技有限公司 / Jinxin Future Technology Co., Ltd.) builds products for the age of AI.">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/" class="brand"><img src="/assets/logo.png" alt="Jinxin Future"><span>JINXIN FUTURE</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="/">Home</a>
+      <a href="/products/">Products</a>
+      <a href="/about/" class="active">About</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <p class="lede">About Jinxin Future</p>
+    <h1 class="about-text">We build products that explore new possibilities created by AI.</h1>
+  </section>
+
+  <section class="block wrap reveal">
+    <div class="about-body">
+      <p><strong>Jinxin Future</strong> is the product brand of <strong>瑾欣未来科技有限公司 (Jinxin Future Technology Co., Ltd.)</strong>, a company focused on AI infrastructure and software-efficiency tooling. We work at the engineering edge of generative AI and large language models — building the underlying capabilities, the developer tools, and the real-life products that sit on top of them.</p>
+      <p>The company is led by <strong>Xiao Xin (肖欣)</strong>, who holds a Master's degree from the University of Queensland and brings a combined background in computer science and marketing. That mix is deliberate: we care as much about whether a product is worth building as about whether it works.</p>
+      <p>We don't believe the interesting future of AI is more automation for its own sake. We believe it is a set of open questions — about expression, about relationships, about the real world — and that the best way to answer them is to build products people actually live with.</p>
+      <p class="muted">Our first product, <a class="link" href="/products/">ZIJI</a>, is where our exploration of AI × Expression becomes something you can hold. More will follow, because the company is built to keep exploring what AI makes possible.</p>
+    </div>
+  </section>
+
+  <section class="block contact-dark reveal">
+    <div class="wrap">
+      <span class="kicker">Contact</span>
+      <a class="email" href="mailto:hello@jinxinfuture.online">hello@jinxinfuture.online</a>
+      <p class="note">For partnerships, press, or early access to our products.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-inner">
+      <span class="foot-brand"><img src="/assets/logo.png" alt="">JINXIN FUTURE</span>
+      <nav class="foot-links">
+        <a href="/products/">Products</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+      </nav>
+    </div>
+    <p class="foot-legal">Jinxin Future is a brand of 瑾欣未来科技有限公司 (Jinxin Future Technology Co., Ltd.). Building products for the age of AI.</p>
+  </div>
+</footer>
+
+<script>
+  const t=document.getElementById('navToggle'),l=document.getElementById('navLinks');
+  t.addEventListener('click',()=>l.classList.toggle('open'));
+  l.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>l.classList.remove('open')));
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

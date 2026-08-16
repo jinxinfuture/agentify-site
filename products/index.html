@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZIJI — Jinxin Future</title>
+<meta name="description" content="ZIJI: an AI writing companion for deeper thinking and authentic expression. 用文字，看见真实的自己。">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/" class="brand"><img src="/assets/logo.png" alt="Jinxin Future"><span>JINXIN FUTURE</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="/">Home</a>
+      <a href="/products/" class="active">Products</a>
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <p class="lede">Our first product</p>
+    <h1>ZIJI — <em>用文字，看见真实的自己。</em></h1>
+    <p class="sub">An AI writing companion for deeper thinking and authentic expression.</p>
+  </section>
+
+  <section class="block wrap reveal">
+    <div class="product">
+      <h2>ZIJI</h2>
+      <div>
+        <p class="zh">用文字，看见真实的自己。</p>
+        <p class="en">An AI writing companion for deeper thinking and authentic expression.</p>
+        <ul class="points">
+          <li><strong>Think, then write.</strong> ZIJI asks before it answers — helping you surface what you actually mean, not just what sounds fluent.</li>
+          <li><strong>A private space.</strong> Your drafts and reflections are yours. We are built around privacy, not surveillance.</li>
+          <li><strong>For the long form.</strong> Journals, letters, essays, decisions — the writing that matters because it's yours.</li>
+        </ul>
+        <a class="link" href="mailto:hello@jinxinfuture.online">Request early access →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block wrap reveal">
+    <span class="kicker">Why we built it</span>
+    <div class="about-body">
+      <p>Most AI writing tools optimize for output. ZIJI optimizes for you — for the part of writing that is actually thinking. We believe the interesting future of AI in writing is not faster spam, but a quieter, more honest relationship with your own words.</p>
+      <p class="muted">ZIJI is the first product from Jinxin Future. It is where our exploration of <em>AI × Expression</em> becomes something you can hold.</p>
+      <p><a class="link" href="/privacy/">Read how we protect your writing →</a></p>
+    </div>
+  </section>
+
+  <section class="block contact-dark reveal">
+    <div class="wrap">
+      <span class="kicker">Get in touch</span>
+      <a class="email" href="mailto:hello@jinxinfuture.online">hello@jinxinfuture.online</a>
+      <p class="note">Want to try ZIJI before everyone else? Email us and we'll add you to the list.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-inner">
+      <span class="foot-brand"><img src="/assets/logo.png" alt="">JINXIN FUTURE</span>
+      <nav class="foot-links">
+        <a href="/products/">Products</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+      </nav>
+    </div>
+    <p class="foot-legal">Jinxin Future is a brand of 瑾欣未来科技有限公司 (Jinxin Future Technology Co., Ltd.). Building products for the age of AI.</p>
+  </div>
+</footer>
+
+<script>
+  const t=document.getElementById('navToggle'),l=document.getElementById('navLinks');
+  t.addEventListener('click',()=>l.classList.toggle('open'));
+  l.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>l.classList.remove('open')));
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Jinxin Future</title>
+<meta name="description" content="Contact Jinxin Future (瑾欣未来科技有限公司). Email hello@jinxinfuture.online.">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/" class="brand"><img src="/assets/logo.png" alt="Jinxin Future"><span>JINXIN FUTURE</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="/">Home</a>
+      <a href="/products/">Products</a>
+      <a href="/about/">About</a>
+      <a href="/contact/" class="active">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <p class="lede">Contact</p>
+    <h1 class="about-text">Let's talk about what AI makes possible.</h1>
+  </section>
+
+  <section class="block wrap reveal">
+    <div class="contact-grid">
+      <div>
+        <a class="email" href="mailto:hello@jinxinfuture.online">hello@jinxinfuture.online</a>
+        <p class="note">We read everything. For product access, partnerships, or press — just write.</p>
+      </div>
+      <div class="address-block">
+        <div>
+          <span class="label">Entity</span>
+          瑾欣未来科技有限公司<br>Jinxin Future Technology Co., Ltd.
+        </div>
+        <!-- TODO: replace the two lines below with the real registered address and phone before submitting to Apple -->
+        <div>
+          <span class="label">Registered address</span>
+          [Registered address to be added]
+        </div>
+        <div>
+          <span class="label">Phone</span>
+          [Phone to be added]
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-inner">
+      <span class="foot-brand"><img src="/assets/logo.png" alt="">JINXIN FUTURE</span>
+      <nav class="foot-links">
+        <a href="/products/">Products</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+      </nav>
+    </div>
+    <p class="foot-legal">Jinxin Future is a brand of 瑾欣未来科技有限公司 (Jinxin Future Technology Co., Ltd.). Building products for the age of AI.</p>
+  </div>
+</footer>
+
+<script>
+  const t=document.getElementById('navToggle'),l=document.getElementById('navLinks');
+  t.addEventListener('click',()=>l.classList.toggle('open'));
+  l.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>l.classList.remove('open')));
+</script>
+</body>
+</html>
