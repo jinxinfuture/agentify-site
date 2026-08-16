@@ -1,2 +1,6 @@
 # Local agent/workspace memory — never commit
 .workbuddy/
+
+# Local design preview & research notes — not part of the deployed site
+brand-asset-research.md
+preview/
